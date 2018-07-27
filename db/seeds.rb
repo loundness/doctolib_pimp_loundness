@@ -16,6 +16,11 @@ end
 Faker::Code.ean )
 end		
 
-5.times do
+1.times do
 	appoitment = Appoitment.create(date: Faker::Date.forward(30), doctor_id: rand(1..10), patient_id: rand(1..10) )
 end	
+
+1.times do
+	specialty = Specialty.create(name: Faker::Artist.name)
+	d.specialty_ids = s.id
+end
